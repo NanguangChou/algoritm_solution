@@ -34,7 +34,7 @@ public:
 int main(int argc, const char * argv[]) {
 
 	Solution sol;
-	cout<<sol.isPalindrome(10000000001)<<endl;
+	cout<<sol.isPalindrome(100000001)<<endl;
 
     return 0;
 }
