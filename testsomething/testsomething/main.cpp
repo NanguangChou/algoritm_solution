@@ -6,19 +6,25 @@
 //  Copyright © 2015年 zhounanguang. All rights reserved.
 //
 
+#include <string>
 #include <iostream>
-#include <iomanip>
-#include <cmath>
-#include <cstring>
+#include <pcre++.h>
 using namespace std;
-
-
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    int i,j;
-    char s[1000] ="1";
-    cout << strlen(s);
-    
-    cout << setw(20) <<left<< setfill('*') <<right<< "Hello, World!"<<endl;
-    return 0;
+using namespace pcrepp;
+int main() {
+	string src("111 <title>Hello World</title> 222");
+	string pattern("<title>(.*)</title>");
+	cout << "String : " << src << endl;
+	cout << "Pattern : " << pattern << endl;
+	Pcre reg(pattern, PCRE_DOTALL);
+	if (reg.search(src) == true) { //
+		cout << "\nOK, has matched ...\n\n";
+		for (int pos = 0; pos < reg.matches(); pos++) {
+			cout << pos << ": " << reg[pos] << endl; 　
+		}
+	} else {
+		cout << "Sorry, no match ...\n";
+		return 1;	　　
+	}
+	return 0;
 }

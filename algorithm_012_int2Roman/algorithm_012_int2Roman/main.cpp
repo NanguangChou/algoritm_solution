@@ -1,7 +1,7 @@
 //
 //  main.cpp
 //  algorithm_012_int2Roman
-//
+//  Roman numral "M","CM","D","CD","C","XC","L","XL","X","IX","V","IV","I"
 //  Created by zhounanguang on 15/12/26.
 //  Copyright © 2015年 zhounanguang. All rights reserved.
 //
