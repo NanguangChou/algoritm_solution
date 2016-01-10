@@ -59,7 +59,7 @@ int main(int argc, const char * argv[]) {
 	head->val = 0;
 	ListNode* p = head;
 
-	for (int i = 0; i < 3; i++) {
+	for (int i = 0; i < 10; i++) {
 		ListNode* newDom = new ListNode;
 		newDom->val = i + 1;
 		newDom->next = NULL;
