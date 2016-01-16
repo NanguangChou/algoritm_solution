@@ -8,6 +8,7 @@
 
 #include <iostream>
 #include <string>
+
 using namespace std;
 class Solution {
 public:
@@ -29,6 +30,7 @@ public:
         return -1;
     }
 };
+
 int main(int argc, const char * argv[]) {
     // insert code here...
     string haystack = "misisipi";
