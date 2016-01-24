@@ -19,7 +19,7 @@ public:
     	if(len<1)
     		return ret;
     	for(int i=0;i<len;i++){
-    		if(nums[i]==target)
+    		if( nums[i] == target )
     			return i;
     	}
         return ret;
